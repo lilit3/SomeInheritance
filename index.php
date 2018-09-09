@@ -80,7 +80,6 @@ class ForDiffArray extends ForArrayClass
     }
 }
 
-
 $obj = new ForArrayClass([5, 7, 1, 4, 19, 8, 75, 14]);
 var_dump($obj->arraySum());
 var_dump($obj->inArray());
