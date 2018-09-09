@@ -65,6 +65,11 @@ class ForArrayClass
 
 class ForDiffArray extends ForArrayClass
 {
+
+	function __construct(array $arr1) {
+       parent::__construct($arr1);
+   }
+
     // array_diff
     public function arrayDiff($arrayForDiff) {
         
@@ -80,6 +85,7 @@ class ForDiffArray extends ForArrayClass
     }
 }
 
+
 $obj = new ForArrayClass([5, 7, 1, 4, 19, 8, 75, 14]);
 var_dump($obj->arraySum());
 var_dump($obj->inArray());
@@ -89,4 +95,4 @@ $array1 = array("a" => "green", "red", "blue", "red");
 $array2 = array("b" => "green", "yellow", "red");
 
 $childObj = new ForDiffArray($array1);
-$childObj->arrayDiff($array2);
+var_dump ($childObj->arrayDiff($array2));
