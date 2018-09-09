@@ -39,27 +39,27 @@ class ForArrayClass
     }
        
      // sort
-     public function sortArray() {
+      public function sortArray() {
         
         $change = $this->arr1[0];
         $temp = $this->count;
         
-        for ($i=0; $i<$temp; $i++) {
-            $temp = $i-$i;
-            
+        for ($i=$temp; $i>0; $i=$temp) {
+
             for ($j=0; $j<$this->count-1; $j++) {
                
                 if ($this->arr1[$j] > $this->arr1[$j+1]) {
                     $change = $this->arr1[$j];
                     $this->arr1[$j] = $this->arr1[$j+1];
                     $this->arr1[$j+1] = $change;
-                    $temp++;
+                    $temp--;
                 }
             }
         }
         
         return $this->arr1;
     }
+    
     
 }
 
