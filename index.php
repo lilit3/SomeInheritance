@@ -7,7 +7,7 @@ class ForArrayClass
     
     public function __construct(array $arr1){
         $this->arr1 = $arr1;
-        $this->needle = 9;
+        $this->needle = 7;
         $this->getCountArr();
     }
     public function getCountArr() {
